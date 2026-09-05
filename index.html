@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2b211b">
+  <meta name="description" content="BERNAMA COFFEE — Nusantara Roasted Beans Explorer. Explore the origin, taste the authentic character.">
+  <title>BERNAMA COFFEE — Nusantara Roasted Beans Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="BERNAMA COFFEE">
+    <img src="assets/logo.png" alt="Logo BERNAMA COFFEE">
+    <span><b>BERNAMA</b><small>COFFEE BEANS</small></span>
+  </a>
+  <button class="menu-btn" aria-label="Buka menu">☰</button>
+  <nav>
+    <a href="#products">Katalog</a>
+    <a href="#explorer">Explorer Box</a>
+    <a href="#story">Tentang</a>
+    <a href="#process">Proses</a>
+    <a href="#business">Model Bisnis</a>
+    <a href="#contact" class="nav-cta">Pesan</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">NUSANTARA ROASTED BEANS EXPLORER</div>
+    <h1>Explore the origin.<br><em>Taste the authentic character.</em></h1>
+    <p>Temukan karakter kopi Nusantara dari berbagai origin—dikurasi, dikemas praktis, dan dijelaskan dengan cara yang ramah untuk pemula.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#products">Jelajahi Kopi <span>↗</span></a>
+      <a class="btn ghost" href="#explorer">Lihat Explorer Box</a>
+    </div>
+    <div class="hero-meta">
+      <span>☕ 10 origin pilihan</span><span>◌ Small batch</span><span>▱ Online-first</span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="stamp">AUTHENTIC<br><b>INDONESIAN</b></div>
+    <img src="assets/logo-branding.jpeg" alt="Brand BERNAMA COFFEE">
+    <div class="vertical-jp">コーヒー豆</div>
+  </div>
+</section>
+
+<section class="ticker"><span>GAYO</span><i>•</i><span>SIDIKALANG</span><i>•</i><span>TEMANGGUNG</span><i>•</i><span>KINTAMANI</span><i>•</i><span>TORaja</span><i>•</i><span>PAPUA</span></section>
+
+<section id="story" class="section story">
+  <div class="section-intro">
+    <div class="eyebrow">WHY BERNAMA?</div>
+    <h2>Kopi bukan sekadar minuman.<br><em>Ia adalah perjalanan rasa.</em></h2>
+  </div>
+  <div class="story-grid">
+    <article class="story-card dark">
+      <span class="number">01</span><h3>Blind Consumption</h3>
+      <p>Banyak orang menikmati kopi tanpa mengenal origin dan karakter rasa yang membuat setiap daerah berbeda.</p>
+    </article>
+    <article class="story-card">
+      <span class="number">02</span><h3>Barrier to Entry</h3>
+      <p>Kemasan 250 g–1 kg bisa terlalu besar untuk pemula yang baru ingin mencoba satu karakter rasa.</p>
+    </article>
+    <article class="story-card accent">
+      <span class="number">03</span><h3>Taste Journey</h3>
+      <p>Explorer Box menghadirkan beberapa origin dalam ukuran kecil agar konsumen dapat membandingkan rasa dengan lebih mudah.</p>
+    </article>
+  </div>
+  <div class="solution">
+    <div><span class="eyebrow">OUR ANSWER</span><h3>Kurasi. Informasi. Eksplorasi.</h3></div>
+    <p>BERNAMA COFFEE berfokus pada kurasi roasted beans, repacking, branding, pemasaran, penjualan, dan pelayanan—bukan roasting sendiri.</p>
+  </div>
+</section>
+
+<section id="products" class="section products-section">
+  <div class="section-head">
+    <div><div class="eyebrow">THE CATALOG</div><h2>Origin, <em>character,</em> discovery.</h2></div>
+    <p>10 varian awal dari proposal BERNAMA COFFEE, dengan informasi origin, jenis, proses, karakter, dan harga per 100 g.</p>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">Semua</button>
+    <button class="filter" data-filter="arabika">Arabika</button>
+    <button class="filter" data-filter="robusta">Robusta</button>
+    <input id="search" type="search" placeholder="Cari origin atau karakter rasa…">
+  </div>
+  <div id="productGrid" class="product-grid"></div>
+</section>
+
+<section id="explorer" class="section explorer">
+  <div class="explorer-copy">
+    <div class="eyebrow">SIGNATURE EXPERIENCE</div>
+    <h2>One origin is one experience.<br><em>Explorer is a journey.</em></h2>
+    <p>Paket Nusantara Beans Origin Package dirancang untuk mencoba beberapa karakter kopi dalam satu pembelian.</p>
+    <div class="package-list">
+      <button class="package active" data-pack="3"><b>Explorer 3</b><span>Gayo + Temanggung + Java Halu Banana</span><strong>3 origin</strong></button>
+      <button class="package" data-pack="5"><b>Explorer 5</b><span>Gayo + Toraja + Bali Kintamani + Papua Moanemani + Java Halu Banana</span><strong>5 origin</strong></button>
+    </div>
+  </div>
+  <div class="explorer-image">
+    <img id="packImage" src="assets/explorer-3.jpeg" alt="Explorer Box BERNAMA COFFEE">
+    <div class="image-caption"><span>BERNAMA COFFEE</span><b id="packTitle">EXPLORER 3</b></div>
+  </div>
+</section>
+
+<section class="section packaging">
+  <div class="section-head"><div><div class="eyebrow">PACKAGING</div><h2>Minimalis, informatif, <em>siap dieksplorasi.</em></h2></div>
+  <p>Konsep kemasan aluminium dengan seal/segel, serta beberapa pilihan ukuran sesuai kebutuhan konsumen.</p></div>
+  <div class="pack-grid">
+    <div class="pack-card"><img src="assets/pack-brown.png"><b>10 g • Arabika</b><span>Ground medium + coffee filter</span></div>
+    <div class="pack-card"><img src="assets/pack-white.png"><b>10 g • Robusta</b><span>Ground halus untuk tubruk</span></div>
+    <div class="pack-card"><div class="pack-icon">100–250g</div><b>Medium Pack</b><span>Beans / grind sesuai permintaan</span></div>
+    <div class="pack-card"><div class="pack-icon">500g+</div><b>Large Pack</b><span>Khusus biji kopi tanpa digiling</span></div>
+  </div>
+</section>
+
+<section id="process" class="section process">
+  <div class="section-intro"><div class="eyebrow">BEHIND THE BRAND</div><h2>From supplier to your <em>cup.</em></h2><p>BERNAMA COFFEE memperoleh roasted beans siap jual dari supplier, lalu menjaga kualitas melalui proses pengadaan, pengecekan, repacking, labeling, penyimpanan, hingga pengiriman.</p></div>
+  <div class="process-grid">
+    <div class="process-list">
+      <div><span>01</span><b>Tentukan produk</b><small>Menentukan origin yang akan dijual</small></div>
+      <div><span>02</span><b>Pilih supplier</b><small>Membandingkan harga dan kualitas</small></div>
+      <div><span>03</span><b>Terima & QC</b><small>Memeriksa kondisi, batch, aroma, dan kesesuaian</small></div>
+      <div><span>04</span><b>Timbang & repack</b><small>Menyesuaikan gramasi produk</small></div>
+      <div><span>05</span><b>Label & simpan</b><small>Label informatif lalu penyimpanan</small></div>
+      <div><span>06</span><b>Pack & kirim</b><small>Pesanan diproses untuk pelanggan</small></div>
+    </div>
+    <img src="assets/quality-control.jpg" alt="Pemeriksaan quality control BERNAMA COFFEE">
+  </div>
+</section>
+
+<section id="business" class="section business">
+  <div class="section-head"><div><div class="eyebrow">BUSINESS MODEL</div><h2>Lean by design. <em>Strong on experience.</em></h2></div><p>Model micro coffee business yang dapat dijalankan secara mandiri dari skala kecil, tanpa ketergantungan pada toko fisik.</p></div>
+  <div class="bmc">
+    <div class="bmc-box"><b>KEY PARTNERS</b><p>Supplier roasted beans<br>Percetakan kemasan/label<br>Marketplace<br>Komunitas</p></div>
+    <div class="bmc-box"><b>KEY ACTIVITIES</b><p>Pengadaan · QC · Repacking · Labeling · Marketing · Penjualan · Packing</p></div>
+    <div class="bmc-box featured"><b>VALUE PROPOSITION</b><p>Eksplorasi roasted beans Nusantara berdasarkan <strong>origin, proses & karakter rasa.</strong></p></div>
+    <div class="bmc-box"><b>CUSTOMER RELATIONSHIPS</b><p>Edukasi<br>Rekomendasi kopi<br>Pelayanan personal</p></div>
+    <div class="bmc-box"><b>CUSTOMER SEGMENTS</b><p>Mahasiswa<br>Pekerja<br>Coffee enthusiast<br>Komunitas kopi</p></div>
+    <div class="bmc-box wide"><b>CHANNELS</b><p>WhatsApp · Instagram · TikTok · Marketplace · Penjualan langsung</p></div>
+    <div class="bmc-box wide"><b>COST STRUCTURE</b><p>Pembelian beans · Kemasan · Label · Transportasi · Marketplace · Promosi & operasional</p></div>
+    <div class="bmc-box wide"><b>REVENUE STREAMS</b><p>Penjualan roasted beans dan paket origin.</p></div>
+  </div>
+</section>
+
+<section class="section audience">
+  <div class="audience-copy"><div class="eyebrow">WHO IS IT FOR?</div><h2>Untuk yang ingin mulai mengenal kopi <em>lebih jauh.</em></h2><p>Target utama adalah mahasiswa dan pekerja muda yang aktif di media sosial, tertarik mencoba produk baru, menyukai kopi, membutuhkan produk praktis, dan sensitif terhadap harga.</p><p>Target sekunder: coffee enthusiast, komunitas kopi, reseller kecil, serta konsumen yang mencari buah tangan untuk kolega.</p></div>
+  <div class="audience-tags"><span>Mahasiswa</span><span>Pekerja muda</span><span>Coffee enthusiast</span><span>Komunitas</span><span>Reseller</span><span>Gift / Hampers</span></div>
+</section>
+
+<section class="section risks">
+  <div class="section-head"><div><div class="eyebrow">RISK MANAGEMENT</div><h2>Small batch, <em>smart moves.</em></h2></div><p>Strategi mitigasi mengikuti risiko utama dalam proposal.</p></div>
+  <div class="risk-grid">
+    <div><b>Produk tidak terjual</b><span>Small batch dan tidak membeli semua varian dalam jumlah besar.</span></div>
+    <div><b>Modal tertahan</b><span>Pre-order untuk produk tertentu.</span></div>
+    <div><b>Persaingan harga</b><span>Menang melalui informasi origin, karakter, kemasan, dan pengalaman.</span></div>
+    <div><b>Supplier</b><span>Menyiapkan lebih dari satu supplier alternatif.</span></div>
+    <div><b>Produk tidak sesuai</b><span>Pengecekan saat barang diterima dan pencatatan batch.</span></div>
+    <div><b>Beban kerja pemilik</b><span>Pencatatan digital, katalog online, dan jadwal repacking berbasis pesanan.</span></div>
+  </div>
+</section>
+
+<section class="section roadmap">
+  <div class="eyebrow">THE ROAD AHEAD</div><h2>From validation to <em>local brand.</em></h2>
+  <div class="timeline">
+    <div><b>01</b><strong>Validasi Pasar</strong><p>Menjual beberapa varian untuk mengetahui kopi yang paling diminati.</p></div>
+    <div><b>02</b><strong>Penguatan Brand</strong><p>Meningkatkan kemasan, logo, konten, pelayanan, dan katalog.</p></div>
+    <div><b>03</b><strong>Origin Package</strong><p>Membuat paket eksplorasi 3 dan 5 jenis beans.</p></div>
+    <div><b>04</b><strong>Subscription / Reseller</strong><p>1 bulan 1 origin bean dengan harga lebih ekonomis bagi reseller.</p></div>
+    <div><b>05</b><strong>Pengembangan Produk</strong><p>Coffee sampler, house blend, merchandise, gift package, dan kerja sama kantor/komunitas.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="contact-box">
+    <div><div class="eyebrow">START YOUR EXPLORATION</div><h2>Belum tahu harus mulai dari mana?</h2><p>Ceritakan preferensi rasa Anda. BERNAMA COFFEE dapat membantu memilih origin yang cocok untuk perjalanan pertama.</p></div>
+    <form id="orderForm">
+      <input id="name" required placeholder="Nama" autocomplete="name">
+      <select id="choice"><option>Rekomendasikan untuk saya</option><option>Gayo</option><option>Sidikalang</option><option>Temanggung</option><option>Explorer 3</option><option>Explorer 5</option></select>
+      <textarea id="note" placeholder="Preferensi rasa / kebutuhan (opsional)"></textarea>
+      <button class="btn primary" type="submit">Kirim Permintaan <span>↗</span></button>
+      <small>Form demo untuk website UAS. Hubungkan ke WhatsApp/marketplace saat akun bisnis sudah siap.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand"><img src="assets/logo.png" alt=""><div><b>BERNAMA COFFEE</b><span>Nusantara Roasted Beans Explorer</span></div></div>
+  <div class="footer-links"><a href="#products">Katalog</a><a href="#explorer">Explorer Box</a><a href="#story">Tentang</a><a href="#contact">Kontak</a></div>
+  <p>© 2026 BERNAMA COFFEE · Authentic • Premium • Indonesian</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
